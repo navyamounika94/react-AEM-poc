@@ -1,0 +1,62 @@
+
+.join-family-card {
+    background-color: #EAEAEA !important;
+    text-align: center;
+    padding: 2.5rem 0% 5rem;
+
+}
+    .card-body .join-family-button.btn-white:hover {
+            border: 2px solid white !important;
+            background: #000;
+            color: #fff;
+            transition: all .3s ease;
+    }
+    .card-body .join-family-button.btn-black:hover {
+        border: 2px solid black !important;
+        color: #000;
+        background: #fff;
+        transition: all .3s ease;
+}
+
+    .join-family-title {
+        font-size: 16px !important;
+        letter-spacing: 2px;
+        padding-bottom: 0%;
+        color: grey;
+        text-transform: uppercase !important;
+        padding-top: 1.375rem;
+        margin-bottom: 0%;
+        }
+
+    .join-family-subtitle {
+        font-size: 24px !important;
+        font-weight: lighter !important;
+        text-transform: uppercase !important;
+        line-height: 3rem;[]
+        margin-bottom: 12px;
+    }
+
+    .join-family-text {
+        font-size: .875rem!important;
+        letter-spacing: 1px!important;
+        margin-bottom: 16px;
+    }
+
+    
+    .appIcon-img{
+        margin: 5px 2px 0 0;
+        width: 150px !important;
+    }
+
+          .card-body{
+            padding-bottom:0;
+        }
+        
+        .join-family-button {
+            width: 222px !important;
+            margin-top: 2% !important;
+            margin-bottom: 0% !important;
+        }
+        .card-body .join-family-button.btn-black{
+            color: #fff;
+        }

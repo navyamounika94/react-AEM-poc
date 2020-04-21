@@ -1,0 +1,46 @@
+
+ body.loading-overlay-transparent {
+  .site-loader-new {
+    display: flex !important;
+}
+ }
+.site-loader-new{
+    display: none;
+}
+
+
+body {
+  &.loading-overlay,
+  &.loading-overlay-transparent {
+    overflow: hidden;
+    height: 100%;
+    opacity: 0.5;
+  }
+  padding-top: 60px;
+  
+  &.loader-active,
+  &.loading-overlay-transparent {
+          
+       .site-loader-container{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+         .site-loader {
+        width: 100px;
+        height: 100px;
+        z-index: 15000;
+         svg {
+          position: absolute;
+          width: 100px !important;
+          height: 100px !important;
+          left:50%;
+          top:50%;
+          transform: translate(-50%,-50%)!important;
+        }
+      }
+      }
+  
+  }
+}

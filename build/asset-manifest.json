@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/etc.clientlibs/TMNA/clientlibs/TMNA-react/resources/static/css/main.8a9e59b0.chunk.css",
+    "main.js": "/etc.clientlibs/TMNA/clientlibs/TMNA-react/resources/static/js/main.4a813dd3.chunk.js",
+    "main.js.map": "/etc.clientlibs/TMNA/clientlibs/TMNA-react/resources/static/js/main.4a813dd3.chunk.js.map",
+    "runtime-main.js": "/etc.clientlibs/TMNA/clientlibs/TMNA-react/resources/static/js/runtime-main.bf699fe4.js",
+    "runtime-main.js.map": "/etc.clientlibs/TMNA/clientlibs/TMNA-react/resources/static/js/runtime-main.bf699fe4.js.map",
+    "static/js/2.8472ca15.chunk.js": "/etc.clientlibs/TMNA/clientlibs/TMNA-react/resources/static/js/2.8472ca15.chunk.js",
+    "static/js/2.8472ca15.chunk.js.map": "/etc.clientlibs/TMNA/clientlibs/TMNA-react/resources/static/js/2.8472ca15.chunk.js.map",
+    "index.html": "/etc.clientlibs/TMNA/clientlibs/TMNA-react/resources/index.html",
+    "precache-manifest.0b972aab7eaa595c62a4b4e2a0a78837.js": "/etc.clientlibs/TMNA/clientlibs/TMNA-react/resources/precache-manifest.0b972aab7eaa595c62a4b4e2a0a78837.js",
+    "service-worker.js": "/etc.clientlibs/TMNA/clientlibs/TMNA-react/resources/service-worker.js",
+    "static/css/main.8a9e59b0.chunk.css.map": "/etc.clientlibs/TMNA/clientlibs/TMNA-react/resources/static/css/main.8a9e59b0.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf699fe4.js",
+    "static/js/2.8472ca15.chunk.js",
+    "static/css/main.8a9e59b0.chunk.css",
+    "static/js/main.4a813dd3.chunk.js"
+  ]
+}
