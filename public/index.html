@@ -1,41 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>React App</title>
-    <meta charset="utf-8" />
-    <meta
-      property="cq:pagemodel_root_url"
-      content="/content/TMNA/en.model.json"
-    />
-    <link
-      rel="stylesheet"
-      href="http://localhost:4502/etc.clientlibs/TMNA/clientlibs/responsivegrid.css"
-      type="text/css"
-    />
-    <script>
-      // In development mode, redirect from "/" to app root
-      if (
-        '%NODE_ENV%' === 'development' &&
-        location.pathname === '/' &&
-        '%REACT_APP_ROOT%'
-      ) {
-        location.href = '%REACT_APP_ROOT%';
+
+<head>
+  <title>React App</title>
+  <meta charset="utf-8" />
+  <meta property="cq:pagemodel_root_url" content="/content/TMNA/en.model.json" />
+  <link rel="stylesheet" href="http://localhost:4502/etc.clientlibs/TMNA/clientlibs/responsivegrid.css"
+    type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" async=""
+    src="https://drivers.lexus.com/lexus-share/js/tracking_omn/JSON/LDomni4.json"></script>
+  <script type="text/javascript" async=""
+    src="https://drivers.lexus.com/lexus-share/js/tracking_omn/s_code_ld.js"></script>
+  <script type="text/javascript" async=""
+    src="https://drivers.lexus.com/lexus-share/js/tracking_omn/LD_cod.js"></script>
+  <script>
+    // In development mode, redirect from "/" to app root
+    if (
+      '%NODE_ENV%' === 'development' &&
+      location.pathname === '/' &&
+      '%REACT_APP_ROOT%'
+    ) {
+      location.href = '%REACT_APP_ROOT%';
+    }
+  </script>
+  <!-- <script type="text/javascript">
+       var tagCall = function (tagKey, tagContentTemplate) {
+      fireTag(tagKey, tagContentTemplate);
+    }
+    var fireTagCall = function (tagKey, errorMsg) {
+      var tagContentTemplate = jQuery.extend(true, {}, '');
+      if (fireTagParam.length != 0) {
+        $.extend(true, tagContentTemplate, fireTagParam);
       }
-    </script>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div class="container-fluid ld-pagecontent">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                  <div id="page"></div>
-                  </div>
-              </div>
+      //console.log("||LD Analytics||" + tagKey + " TAG Content >> " + JSON.stringify(tagContentTemplate));
+      if (typeof tagContentTemplate == typeof undefined) {
+        console.log("||LD Analytics|| Unable to find tag entry " + tagKey);
+      } else {
+        //Generic elements
+        tagCall(tagKey, tagContentTemplate);
+        fireTagParam = {};
+      }
+
+    };
+    var TOAnalytics = (function () {
+      var module = {};
+      //Set this to true/false to enable/disable.
+      module.fire = function (tagKey, errorMsg) {
+        fireTagCall(tagKey, errorMsg);
+      };
+      return module;
+    }());
+    $(document).on("click", "[data-firetag]", function () {
+      if ("" != $(this).attr("data-firetag")) {
+        var tagId = "" + $(this).attr("data-firetag");
+        void 0 !== $(this).attr("data-firetag-param") && (fireTagParam = jQuery.parseJSON($(this).attr("data-firetag-param")));
+        var multipleTagIdIndex = tagId.indexOf(",");
+        if (multipleTagIdIndex > -1) {
+          var firstTagId = tagId.substring(0, multipleTagIdIndex), secondTagId = tagId.substring(multipleTagIdIndex + 1);
+          TOAnalytics.fire(firstTagId), TOAnalytics.fire(secondTagId, "");
+        } else TOAnalytics.fire(tagId);
+      }
+    })
+
+  </script> -->
+</head>
+
+<body>
+
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div class="container-fluid ld-pagecontent">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="page"></div>
         </div>
+      </div>
     </div>
-   
-  </body>
+  </div>
+
+</body>
+
 </html>

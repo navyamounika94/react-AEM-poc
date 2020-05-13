@@ -25,4 +25,4 @@ import './EmailInput';
 import './ForgotPassword'
 import './Message'
 import './siteLoader'
-import './GlobalNavigation'
+import './GlobalNavigation';
